@@ -1,7 +1,14 @@
+variable "subscription_id" {
+  }
+variable "client_id" {
+  }
+variable "tenant_id" {
+  }
+variable "client_secret" {
+  }
 variable "resource_group_name" {
   description = "Default resource group name that the database will be created in."
-  default     = "myapp-rg"
-}
+  }
 
 variable "location" {
   description = "The location/region where the database and server are created. Changing this forces a new resource to be created."
@@ -51,7 +58,7 @@ variable "end_ip_address" {
 
 variable "tags" {
   description = "The tags to associate with your network and subnets."
-  type        = "map"
+  #type        = "map"
 
   default = {
     tag1 = ""
